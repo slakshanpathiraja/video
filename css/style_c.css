@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60px;
+    z-index: 9999;
+    box-sizing: border-box;
+    background-color: gray;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    float: left;
+    padding-top: 7px;
+    color: white;
+    
+}
+.menu{
+    float: right;
+    color: white;
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    padding: 0;
+    display: inline;
+    font-size: 18px;    
+}
+.menu .item{
+    color: white;
+    padding: 16.5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;   
+}
+.menu .active{
+    background-color: #4CAF50;
+}
+.menu .item:hover{
+    background-color: rgb(49, 155, 52)
+}
+.menu a:hover:not(.active) {
+    background-color: darkgrey;
+}
+.section{
+    display: block;
+    overflow: auto;
+    width: 100%;
+    padding-top: 70px;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+.section ul{
+    list-style: none;
+    display: inline;
+}
+.section ul li{
+    padding: 0;
+    display: inline;
+}
+.m_menu ul li{
+    display: none;
+}
+.menu .icon{
+    display: none;
+}
+.sb_menu{
+    background-color: #333;
+    z-index: 9990;
+    position: fixed;
+    padding-top: 60px;
+    width: 100%;
+    display: none;
+}  
+.profile_menu{
+    z-index: 9990;
+    position: fixed;
+    padding-top: 60px;
+    width: 100%;
+    display: none;
+}
+.profile{
+    background-color: #333;
+    width: 200px;
+    float: right;
+}
+.profile ul{
+    width: 100%;
+}
+.profile ul li{
+    display: block;
+    width: 100%;
+}
+.profile .item{
+    width: 100%;
+    text-align: left;
+    padding: 5px 16px;  
+}
+.tag{
+    width: 100%;
+    background-color: violet;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    max-width: 200px;
+}
+.tag_menu{
+    padding: 20px;
+}
+.dialog_bx{
+    padding-top: 100px;
+    margin-top: 20vh;
+}
+main{
+    overflow: auto;
+}
+.cards{
+    width: 22%;
+    float: left;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 3%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.gallery{
+    width:100%;
+    height:auto;
+}
+.footer{
+    background-color: gray;
+    color: white;
+    display: block;
+    overflow: hidden;
+    
+}
+footer .text{
+    padding-left: 20px;
+    padding-top: 15px;
+    float: left;
+}
+footer .social{
+    float: right;
+}
+footer .social ul{
+    padding-top: 10px;
+    list-style: none;
+    padding-right: 20px;
+    font-size: 20px;
+}
+footer .social ul li{
+    display: inline;
+    padding: 5px 10px;
+    
+}
+footer .social ul li a{
+    color: white;
+}

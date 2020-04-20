@@ -1,0 +1,45 @@
+@media screen and (max-width:700px){
+    .menu ul li{
+     display: none;
+    }
+    .m_menu ul li{
+        display: block;
+        font-size: 18px;  
+        width: 100%;
+    }
+    .menu{
+        float: left;
+    }
+    .m_menu{
+        background-color: #333;
+        z-index: 9990;
+        position: fixed;
+        padding-top: 60px;
+        width: 100%;
+    }
+    .m_menu .item{
+        width: 100%;
+        text-align: left;
+        padding: 5px 16px;  
+    }
+    .menu .icon {
+        background: gray;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .m_menu{
+          display: none;
+      }
+      
+      footer .text{
+          float: none;
+          text-align: center;
+      }
+      footer .social{
+          width: 100%;
+          float: none;
+          text-align: center;
+      }
+}
