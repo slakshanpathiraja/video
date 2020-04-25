@@ -11,10 +11,10 @@ $video_image_url="tgjhhhhj";
 
 
 <?php
-$dbServerName = "sql201.byethost.com";
-$dbUsername = "b14_24551257";
+$dbServerName = "65.19.141.67";
+$dbUsername = "skypipit_admin";
 $dbPassword = "123@Samitha";
-$dbName = "b14_24551257_wp679";
+$dbName = "skypipit_vds";
 
 // create connection
 $conn = mysqli_connect($dbServerName, $dbUsername, $dbPassword, $dbName);
