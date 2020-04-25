@@ -11,7 +11,7 @@ $video_image_url="tgjhhhhj";
 
 
 <?php
-$dbServerName = "65.19.141.67";
+$dbServerName = "johnny.heliohost.org:2083";
 $dbUsername = "skypipit_admin";
 $dbPassword = "123@Samitha";
 $dbName = "skypipit_vds";
