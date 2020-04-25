@@ -23,7 +23,7 @@ if (mysqli_connect_errno($conn)){
   }else{
   echo "Database Connected";
  
-    $query_add = "INSERT INTO `video`(`id`, `v_id`, `v_title`, `v_url`, `i_url`) VALUES(NULL'{$video_id}','{$video_title}','{$video_url},'{$video_image_url}')";
+    $query_add = "INSERT INTO `video`(`id`, `v_id`, `v_title`, `v_url`, `i_url`) VALUES(NULL,'{$video_id}','{$video_title}','{$video_url}','{$video_image_url}');"
     $query_add_run = mysqli_query($conn,$query_add);
         if($query_add_run){
             echo " data added";
