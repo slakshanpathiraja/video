@@ -11,10 +11,10 @@ $video_image_url="tgjhhhhj";
 
 
 <?php
-$dbServerName = "johnny.heliohost.org:2083";
-$dbUsername = "skypipit_admin";
-$dbPassword = "123@Samitha";
-$dbName = "skypipit_vds";
+$dbServerName = "b4jlpdkxyoebjyqarksd-mysql.services.clever-cloud.com";
+$dbUsername = "u06xpvi3r4katde0";
+$dbPassword = "RjXOh2jvNJxseVRuKl6L";
+$dbName = "b4jlpdkxyoebjyqarksd";
 
 // create connection
 $conn = mysqli_connect($dbServerName, $dbUsername, $dbPassword, $dbName);
