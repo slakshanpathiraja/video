@@ -24,4 +24,11 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 echo "Connected successfully";
+$query_add = "INSERT INTO video(v_id,v_title,v_url,	i_url) VALUES('{$video_id}','{$video_title}','{$video_url},'{$video_image_url}')";
+$query_add_run = mysqli_query($connection,$query_add);
+        if($query_add_run){
+            echo "data added";
+        }else{
+            echo "data not added";
+        }
 ?>
