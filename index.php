@@ -13,7 +13,7 @@ require_once("includes/navbar.php");
         if(mysqli_num_rows($query_find_run)>0){
             while($row =mysqli_fetch_assoc($query_find_run)){
     ?>
-    <div class="cards"><a class="item" href="player.php">
+    <div class="cards"><a class="item" href="player.php?id=<?php echo $row['v_id']; ?>">
         <div class="gallery" ><!--640*420-->
             <img src="<?php echo $row['i_url']; ?>" alt="" width="100%">
             <div class="viewers_l">
