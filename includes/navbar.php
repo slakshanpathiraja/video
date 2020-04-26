@@ -31,11 +31,20 @@
                 <li><a class="item" href="index.php">home</a></li>
                 <li><a class="item" href="#">set 2</a></li>
                 <li><a class="item" href="#">set 3</a></li>
-                <li><a class="item" href="#">set 4
-                    <i class="fa fa-caret-down"></i>
-                </a></li>
+                <li><a class="item" href="#">set 4<i class="fa fa-caret-down"></i></a>
+                  <ul class="sub_m_menu">
+                    <li><a class="item" href="#">Green</a></li>
+                    <li><a class="item" href="#">Red</a></li>
+                  </ul>
+                </li>
                 <li><a class="item active" href="signin.php">login</a></li>
-                <li><a class="item active" href="signin.php">Profile</a></li>
+                <li><a class="item active" href="signin.php">Profile</a>
+                  <ul class="pro_m_menu">
+                      <li><a class="item" href="#">Green</a></li>
+                      <li><a class="item" href="#">Red</a></li>
+                      <li><a class="item" href="#">Red</a></li>
+                  </ul>
+                </li>
             </ul>
         </nav>
     </div>
