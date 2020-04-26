@@ -1,4 +1,5 @@
 <?php 
+require_once("includes/connection.php");
 $video_id=$_POST['video_id'];
 $video_title=$_POST['title_'];
 $video_url=$_POST['vurl_'];
@@ -11,13 +12,6 @@ $video_image_url=$_POST['downlaodURL'];
 
 
 <?php
-$dbServerName = "b4jlpdkxyoebjyqarksd-mysql.services.clever-cloud.com";
-$dbUsername = "u06xpvi3r4katde0";
-$dbPassword = "RjXOh2jvNJxseVRuKl6L";
-$dbName = "b4jlpdkxyoebjyqarksd";
-
-// create connection
-$conn = mysqli_connect($dbServerName, $dbUsername, $dbPassword, $dbName);
 if (mysqli_connect_errno($conn)){
    echo "Database Connection Failed";
   }else{
