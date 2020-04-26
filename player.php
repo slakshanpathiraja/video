@@ -7,10 +7,18 @@ require_once("includes/navbar.php");
 <div class="section">
   <div class="secction_1">
     <div class="player">
-      <video width="100%" controls>
-        <source src="uploads\video\a.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
+    <iframe src="https://drive.google.com/file/d/1DBqF8KkiK9ClvRaBmDNHJFgXNtXHIyo7/preview?usp=sharing" ></iframe>
+<style type="text/css">
+	iframe{
+    width: 100%;
+		height: 35vw;
+  }
+  @media screen and (max-width:1020px){
+    iframe{
+    width: 100%;
+		height: 45vw;
+  }
+</style>
     </div>
     <div class="play_list">
       <div class="play_list_inside">
