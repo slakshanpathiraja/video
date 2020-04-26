@@ -22,8 +22,8 @@ if (mysqli_connect_errno($conn)){
    echo "Database Connection Failed";
   }else{
   echo "Database Connected";
- 
-    $query_add = "INSERT INTO `video`(`id`, `v_id`, `v_title`, `v_url`, `i_url`) VALUES(NULL,'{$video_id}','{$video_title}','{$video_url}','{$video_image_url}');"
+    //$query_add = "INSERT INTO data_tbl(	name,img_link,v_link) VALUES('{$title}','{$i_url}','{$v_url}')";
+    $query_add = "INSERT INTO `video`(`id`, `v_id`, `v_title`, `v_url`, `i_url`) VALUES(NULL,'{$video_id}','{$video_title}','{$video_url}','{$video_image_url}');";
     $query_add_run = mysqli_query($conn,$query_add);
         if($query_add_run){
             echo " data added";
@@ -31,3 +31,4 @@ if (mysqli_connect_errno($conn)){
             echo " data not added";
         }
   }
+  ?>
