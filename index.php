@@ -21,7 +21,7 @@ require_once("includes/navbar.php");
                 <p class="viewers_n"><?php echo $row['v_view']; ?></p>
             </div>
             <div class="viewers_r">
-                <p class="viewers_t"><?php echo $row['v_time']; ?></p>
+                <p class="viewers_t"><?php echo $row['v_time']; ?> min</p>
             </div>
         </div>
         <div class="discription">
