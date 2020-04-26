@@ -4,4 +4,13 @@
         margin-right: 3.3%;
         float: left;
     }
+    
+}
+@media screen and (max-width:1020px){
+    .play_list_inside{
+        display: none;
+    }
+    .player{
+        width: 100%;
+    }
 }

@@ -3,14 +3,16 @@
     margin: 0;
     padding: 0;
 }
-
+a{
+    text-decoration: none;
+}
 header{
     padding-left: 20px;
     padding-right: 20px;
     height: 60px;
     z-index: 9999;
     box-sizing: border-box;
-    background-color: gray;
+    background-color: black;
     overflow: auto;
     position: fixed;
     width: 100%;
@@ -107,14 +109,21 @@ header{
 }
 .tag{
     width: 100%;
-    background-color: violet;
+    
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
-    max-width: 200px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    max-width: 250px;
+    float: left;
 }
 .tag_menu{
     padding: 20px;
+    overflow: auto;
+}
+.tag:hover{
+    background-color: rgb(49, 155, 52)
 }
 .dialog_bx{
     padding-top: 100px;
@@ -122,22 +131,113 @@ header{
 }
 main{
     overflow: auto;
+    background-color: rgb(221, 223, 221);
+}
+.section{
+    overflow: auto;
 }
 .cards{
     width: 22%;
     float: left;
-    padding: 10px;
     margin-bottom: 20px;
     margin-right: 3%;
     border: 1px solid black;
     border-radius: 15px;
+    text-decoration: none;
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card_link{
+    text-decoration: none;
+    color: yellow;
+}
+.viewers_l{
+    z-index: 5;
+    overflow: auto;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.viewers_r{
+    z-index: 5;
+    overflow: auto;
+    padding-right: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.viewers_i{
+    color: white;
+    float:left;
+}
+.viewers_n{
+    padding-left: 5px;
+    float: left;
+    color: white;
+}
+.viewers_t{
+    float: right;
+    color: white;
+}
+.title{
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .gallery{
+    position: relative;
     width:100%;
     height:auto;
 }
+.gallery img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+.gallery:after {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: radial-gradient(circle, transparent 50%, black 100%);
+  }
+.uploads{
+    margin: 15px;
+    padding: 15px;
+}
+.upload_bar{
+    background-color: #333;
+    padding-bottom: 20px;
+    padding-top: 8px;
+}
+.progress{
+    width:90%;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 px 0 #333;
+    margin: 10px 20px;
+    text-align: center;
+}
+#demo{
+    text-align: center;
+    color: #eee;
+}
+#progress{
+    width: 0%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cb60b3+0,c146a1+50,a80077+51,db36a4+100;Pink+Gloss */
+background: #cb60b3; /* Old browsers */
+background: -moz-linear-gradient(top,  #cb60b3 0%, #c146a1 50%, #a80077 51%, #db36a4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #cb60b3 0%,#c146a1 50%,#a80077 51%,#db36a4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #cb60b3 0%,#c146a1 50%,#a80077 51%,#db36a4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=0 ); /* IE6-9 */
+}
 .footer{
-    background-color: gray;
+    background-color: black;
     color: white;
     display: block;
     overflow: hidden;
@@ -164,4 +264,25 @@ footer .social ul li{
 }
 footer .social ul li a{
     color: white;
+}
+.player{
+    float: left;
+    width: 70%;
+}
+.play_list{
+    float: left;
+    width: 28%;
+    display: block;
+}
+.secction_1{
+    overflow: auto;
+}
+.play_list_inside{
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    background-color: tomato;
+}
+.in{
+    background-color: white;
 }
