@@ -38,11 +38,11 @@
                   </ul>
                 </li>
                 <li><a class="item active" href="signin.php">login</a></li>
-                <li><a class="item active" id="pro_sub_m_menu" href="signin.php">Profile  <i class="fa fa-caret-down "></i></a>
+                <li><a class="item active" id="pro_sub_m_menu" href="#">Profile  <i class="fa fa-caret-down "></i></a>
                   <ul class="pro_m_menu">
-                      <li><a class="item" href="#">Green</a></li>
-                      <li><a class="item" href="#">Red</a></li>
-                      <li><a class="item" href="#">Red</a></li>
+                      <li><a class="item" href="#">Profile</a></li>
+                      <li><a class="item" href="#" data-target="#upload">Upload</a></li>
+                      <li><a class="item" href="#" data-target="#logout">Logout</a></li>
                   </ul>
                 </li>
             </ul>
