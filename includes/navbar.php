@@ -35,6 +35,7 @@
                     <i class="fa fa-caret-down"></i>
                 </a></li>
                 <li><a class="item active" href="signin.php">login</a></li>
+                <li><a class="item active" href="signin.php">Profile</a></li>
             </ul>
         </nav>
     </div>
