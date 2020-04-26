@@ -38,7 +38,7 @@
                   </ul>
                 </li>
                 <li><a class="item active" href="signin.php">login</a></li>
-                <li><a class="item active" href="signin.php">Profile</a>
+                <li><a class="item active" id="pro_sub_m_menu" href="signin.php">Profile  <i class="fa fa-caret-down "></i></a>
                   <ul class="pro_m_menu">
                       <li><a class="item" href="#">Green</a></li>
                       <li><a class="item" href="#">Red</a></li>
