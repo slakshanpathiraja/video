@@ -25,11 +25,15 @@
 <script>
     $(document).ready(function(){
         $("#card_2").hide();
+        $(".sub_m_menu").hide();
     $(".up").click(function(){
         $("#card_2").show(1000);
         $("#card_1").hide(1000);
         $(".up").css("background-color","white");
         $(".in").css("background-color","rgba(249, 255, 249, 0)");
+    });
+    $("#dropdown_sub_m_menu").click(function(){
+        $(".sub_m_menu").show(1000);
     });
     $(".in").click(function(){
         $("#card_1").show(1000);
