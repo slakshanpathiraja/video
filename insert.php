@@ -1,12 +1,12 @@
 <?php 
-//$video_id=$_POST['video_id'];
-//$video_title=$_POST['title_'];
-//$video_url=$_POST['vurl_'];
-//$video_image_url=$_POST['downlaodURL'];
-$video_id="asd";
-$video_title="sdfgjjjjjk";
-$video_url="dfgghjjk";
-$video_image_url="tgjhhhhj";
+$video_id=$_POST['video_id'];
+$video_title=$_POST['title_'];
+$video_url=$_POST['vurl_'];
+$video_image_url=$_POST['downlaodURL'];
+//$video_id="asd";
+//$video_title="sdfgjjjjjk";
+//$video_url="dfgghjjk";
+//$video_image_url="tgjhhhhj";
 ?>
 
 
