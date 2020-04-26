@@ -18,10 +18,10 @@ require_once("includes/navbar.php");
             <img src="<?php echo $row['i_url']; ?>" alt="" width="100%">
             <div class="viewers_l">
                 <i class="fa fa-eye viewers_i" style="font-size:20px"></i>
-                <p class="viewers_n">1587</p>
+                <p class="viewers_n"><?php echo $row['v_view']; ?></p>
             </div>
             <div class="viewers_r">
-                <p class="viewers_t">12.57min</p>
+                <p class="viewers_t"><?php echo $row['v_time']; ?></p>
             </div>
         </div>
         <div class="discription">
