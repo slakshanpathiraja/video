@@ -172,10 +172,7 @@ function log_users() {
         success:function(data){
             alert(data);
             document.getElementById('user').style.display='none'
-            document.getElementById('btn_loging').style.display='none'
-            document.getElementById('btn_profile').style.display='block'
-            document.getElementById('btn_m_loging').style.display='none'
-            document.getElementById('btn_m_profile').style.display='block'
+            window.location = "index.php";
         }
     });
 
