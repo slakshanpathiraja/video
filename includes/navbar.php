@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <header>
     <div class="logo">
         <h2>company</h2>
@@ -112,7 +113,7 @@
             <input type="password" class="form-control" id="u_log_Password" placeholder="Password">
           </div>
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <button type="submit" class="btn btn-success">Login</button>
+          <button type="submit" class="btn btn-success"onclick="log_users()">Login</button>
         </form>
         </div>
         <div class="card-body " id="card_2">

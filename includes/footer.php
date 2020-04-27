@@ -119,12 +119,7 @@
                 });
 
             document.getElementById('upload').style.display='none'
-            swal({
-                title: "Good job!",
-                text: "You clicked the button!",
-                icon: "success",
-                button: "Aww yiss!",
-                });
+            
         });
     });
 }
@@ -151,6 +146,27 @@ function add_users() {
             email_ : email_,
             pw_ : pw_,
             cpw_ : cpw_
+        },
+        success:function(data){
+            alert(data);
+        }
+    });
+
+}
+</script>
+<script>
+function log_users() {
+    var log_email = document.getElementById("u_log_email").value;
+    var log_pw = document.getElementById("u_log_Password").value;
+    console.log(log_email);
+    console.log(log_pw);
+    $.ajax({
+        url:'insert.php',
+        method:'POST',
+        data:{
+            data_id : 'login',
+            email : log_email,
+            pw : log_pw
         },
         success:function(data){
             alert(data);
