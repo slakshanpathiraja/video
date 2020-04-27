@@ -131,10 +131,10 @@
 </script>
 <script>
 function add_users() {
-    var name_ = document.getElementById("form_title").value;
-    var email_ = document.getElementById("form_title").value;
-    var pw_ = document.getElementById("form_vurl").value;
-    var cpw_ = document.getElementById("form_vurl").value;
+    var name_ = document.getElementById("u_add_name").value;
+    var email_ = document.getElementById("u_add_Email").value;
+    var pw_ = document.getElementById("u_add_Password1").value;
+    var cpw_ = document.getElementById("u_add_Password2").value;
     var user_id=upload_id(20);
     console.log(user_id);
     console.log(name_);

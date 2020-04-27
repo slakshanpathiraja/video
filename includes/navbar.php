@@ -105,11 +105,11 @@
         <div class="card-body" id="card_1">
         <form>
           <div class="form-group">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" class="form-control" id="u_log_email" aria-describedby="emailHelp" placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <input type="password" class="form-control" id="u_log_Password" placeholder="Password">
           </div>
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
           <button type="submit" class="btn btn-success">Login</button>
@@ -118,17 +118,17 @@
         <div class="card-body " id="card_2">
         <form>
           <div class="form-group">
-            <input type="text" class="form-control card_3" id="name" aria-describedby="emailHelp" placeholder="Enter Nick name">
+            <input type="text" class="form-control card_3" id="u_add_name" aria-describedby="emailHelp" placeholder="Enter Nick name">
           </div>
           <div class="form-group">
-            <input type="email" class="form-control card_3" id="Email1" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" class="form-control card_3" id="u_add_Email" aria-describedby="emailHelp" placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
-            <input type="password" class="form-control" id="Password1" placeholder="Password">
+            <input type="password" class="form-control" id="u_add_Password1" placeholder="Password">
           </div>
           <div class="form-group">
-            <input type="password" class="form-control" id="Password2" placeholder="Conform Password">
+            <input type="password" class="form-control" id="u_add_Password2" placeholder="Conform Password">
           </div>
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
           <button type="submit" class="btn btn-success" onclick="add_users()">Sign up</button>
