@@ -129,7 +129,36 @@
     });
 }
 </script>
+<script>
+function add_users() {
+    var name_ = document.getElementById("form_title").value;
+    var email_ = document.getElementById("form_title").value;
+    var pw_ = document.getElementById("form_vurl").value;
+    var cpw_ = document.getElementById("form_vurl").value;
+    var user_id=upload_id(20);
+    console.log(user_id);
+    console.log(name_);
+    console.log(email_);
+    console.log(pw_);
+    console.log(cpw_);
+    $.ajax({
+        url:'insert.php',
+        method:'POST',
+        data:{
+            data_id : 'user',
+            user_id : user_id,
+            name_ : name_,
+            email_ : email_,
+            pw_ : pw_,
+            cpw_ : cpw_
+        },
+        success:function(data){
+            alert(data);
+        }
+    });
 
+}
+</script>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
 

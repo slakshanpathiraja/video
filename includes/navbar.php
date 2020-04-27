@@ -117,7 +117,7 @@
         </div>
         <div class="card-body " id="card_2">
         <form>
-        <div class="form-group">
+          <div class="form-group">
             <input type="text" class="form-control card_3" id="name" aria-describedby="emailHelp" placeholder="Enter Nick name">
           </div>
           <div class="form-group">
@@ -131,7 +131,7 @@
             <input type="password" class="form-control" id="Password2" placeholder="Conform Password">
           </div>
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <button type="submit" class="btn btn-success">Sign up</button>
+          <button type="submit" class="btn btn-success" onclick="add_users()">Sign up</button>
         </form>
         </div>
       </div>

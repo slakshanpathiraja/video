@@ -24,7 +24,20 @@ if (mysqli_connect_errno($conn)){
                 echo " data not added";
             }
     }
-    
+    if($data_id === 'user'){
+        $user_id=$_POST['user_id'];
+        $user_name=$_POST['name_'];
+        $user_email=$_POST['email_'];
+        $user_pw=$_POST['pw_'];
+        $user_cpw = $_POST['cpw_'];
+        $query_add = "INSERT INTO `users`(`id`, `user_id`, `user_name`, `user_email`, `user_password`) VALUES(NULL,'u_{$user_id}','{$user_name}','{$user_email}','{$user_pw}');";
+        $query_add_run = mysqli_query($conn,$query_add);
+            if($query_add_run){
+                echo " data added";
+            }else{
+                echo " data not added";
+            }
+    }
     
   }
   ?>
