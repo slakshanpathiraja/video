@@ -150,6 +150,7 @@ function add_users() {
         },
         success:function(data){
             alert(data);
+            
         }
     });
 
@@ -170,7 +171,7 @@ function log_users() {
             pw : log_pw
         },
         success:function(data){
-            alert(data);
+            //alert(data);
             document.getElementById('user').style.display='none'
             window.location = "index.php";
         }
