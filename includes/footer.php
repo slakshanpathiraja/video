@@ -171,7 +171,7 @@ function log_users() {
         },
         success:function(data){
             alert(data);
-            header('Location:index.php');
+            <?php header('Location:index.php'); ?>
         }
     });
 
