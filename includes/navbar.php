@@ -12,11 +12,14 @@
                 <li><a class="item" href="javascript:void(0);"onmouseover="sb_menu()"onmouseout="sb_menu()"onclick="sb_menu()">set 4
                     <i class="fa fa-caret-down"></i>
                 </a></li>
-                <li><a  class="item active" id="btn_loging" data-toggle="modal" data-target="#user" href="#">login</a></li>
-                <li><a class="item active" href="javascript:void(0);"onmouseover="profile_menu()"onmouseout="profile_menu()"onclick="profile_menu()">
-                  <i class="fa fa-user" style="font-size:23px"></i>
-                </a>
-                </li>
+                <?php if(isset($_SESSION['username'])) {?>
+                  <li id="btn_profile"><a class="item active" href="javascript:void(0);"onmouseover="profile_menu()"onmouseout="profile_menu()"onclick="profile_menu()">
+                    <i class="fa fa-user" style="font-size:23px"></i>
+                  </a>
+                  </li>
+                <?php } else {?>
+                  <li id="btn_loging"><a  class="item active"  data-toggle="modal" data-target="#user" href="#">login</a></li>
+                <?php } ?>
             </ul>
         </nav>
         <a href="javascript:void(0);" class="item icon" onclick="mb_menu()">
@@ -38,14 +41,17 @@
                     <li><a class="item" href="#">Red</a></li>
                   </ul>
                 </li>
-                <li><a class="item active"id="btn_m_loging" href="#" data-toggle="modal" data-target="#user">login</a></li>
-                <li><a class="item active" id="pro_sub_m_menu" href="#">Profile  <i class="fa fa-caret-down "></i></a>
+                <?php if(isset($_SESSION['username'])) {?>
+                <li id="btn_m_profile"><a class="item active" id="pro_sub_m_menu" href="#">Profile  <i class="fa fa-caret-down "></i></a>
                   <ul class="pro_m_menu">
                       <li><a class="item" href="#">Profile</a></li>
                       <li><a class="item" href="#"data-toggle="modal" data-target="#upload">Upload</a></li>
                       <li><a class="item" href="#"data-toggle="modal" data-target="#logout">Logout</a></li>
                   </ul>
                 </li>
+                <?php } else {?>
+                  <li id="btn_m_loging"><a class="item active" href="#" data-toggle="modal" data-target="#user">login</a></li>
+                <?php } ?>
             </ul>
         </nav>
     </div>
@@ -185,7 +191,7 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <form action="logout_code.php" method="post">
+          <form action="logout.php" method="post">
           <button type="submit" name="logout_btn" class="btn btn-primary">Logout</button>
           </form>
         </div>
