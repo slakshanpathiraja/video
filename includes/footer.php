@@ -115,6 +115,7 @@
                     },
                    success:function(data){
                        alert(data);
+                       
                    }
                 });
 
@@ -170,6 +171,7 @@ function log_users() {
         },
         success:function(data){
             alert(data);
+            header('Location:index.php');
         }
     });
 
