@@ -34,7 +34,7 @@ if (mysqli_connect_errno($conn)){
         $query_add = "INSERT INTO `users`(`id`, `user_id`, `user_name`, `user_email`, `user_password`) VALUES(NULL,'u_{$user_id}','{$user_name}','{$user_email}','{$user_pw}');";
         $query_add_run = mysqli_query($conn,$query_add);
             if($query_add_run){
-                echo " data added";
+                echo '<script>console.log("data added");</script>'; 
             }else{
                 echo " data not added";
             }
@@ -45,10 +45,11 @@ if (mysqli_connect_errno($conn)){
         $query_find ="SELECT * FROM users WHERE user_email='$user_email' AND user_password='$user_pw' ";
         $query_find_run = mysqli_query($conn,$query_find);
         if(mysqli_fetch_array($query_find_run)){
-            echo " loging ok";
             $_SESSION['username']=$user_email;
             header('Location:index.php');
+            echo '<script>console.log("loging");</script>';
         }else{
+            console.log(" Email id / password is Invalid");
             echo " Email id / password is Invalid";
         }
     }
