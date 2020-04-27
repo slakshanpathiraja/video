@@ -12,7 +12,7 @@
                 <li><a class="item" href="javascript:void(0);"onmouseover="sb_menu()"onmouseout="sb_menu()"onclick="sb_menu()">set 4
                     <i class="fa fa-caret-down"></i>
                 </a></li>
-                <li><a  class="item active" data-toggle="modal" data-target="#user" href="#">login</a></li>
+                <li><a  class="item active" id="btn_loging" data-toggle="modal" data-target="#user" href="#">login</a></li>
                 <li><a class="item active" href="javascript:void(0);"onmouseover="profile_menu()"onmouseout="profile_menu()"onclick="profile_menu()">
                   <i class="fa fa-user" style="font-size:23px"></i>
                 </a>
@@ -38,7 +38,7 @@
                     <li><a class="item" href="#">Red</a></li>
                   </ul>
                 </li>
-                <li><a class="item active" href="#" data-toggle="modal" data-target="#user">login</a></li>
+                <li><a class="item active"id="btn_m_loging" href="#" data-toggle="modal" data-target="#user">login</a></li>
                 <li><a class="item active" id="pro_sub_m_menu" href="#">Profile  <i class="fa fa-caret-down "></i></a>
                   <ul class="pro_m_menu">
                       <li><a class="item" href="#">Profile</a></li>

@@ -171,7 +171,8 @@ function log_users() {
         },
         success:function(data){
             alert(data);
-            <?php header('Location:index.php'); ?>
+            document.getElementById('user').style.display='none'
+            document.getElementById('btn_loging').style.display='none'
         }
     });
 
