@@ -107,6 +107,7 @@
                     url:'insert.php',
                     method:'POST',
                     data:{
+                        data_id : 'video',
                         video_id : video_id,
                         title_ : title_,
                         vurl_ : vurl_,
