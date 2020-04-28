@@ -59,15 +59,37 @@
       button: "OK!",
         });
     });
-    $('#tags').tokenfield({
-    autocomplete: {
-        source: ['red','blue','green','yellow','violet','brown','purple','black','white'],
-        
-    },
-    showAutocompleteOnFocus: true,
-    appendTo : $('#upload')
-    })
     
+    $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags ,
+      appendTo : $('#upload')
+    });
+  } );
     
     });
 </script>
