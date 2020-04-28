@@ -58,14 +58,13 @@
         });
     });
     $('#skill').tokenfield({
-        autocomplete:{
-        source: ['PHP','Codeigniter','HTML','JQuery','Javascript','CSS','Laravel','CakePHP','Symfony','Yii 2','Phalcon','Zend','Slim','FuelPHP','PHPixie','Mysql'],
-        delay:100
-        },
-        showAutocompleteOnFocus: true
-        $(this).autocomplete('widget').zIndex(9990);
+    autocomplete:{
+    source: ['PHP','Codeigniter','HTML','JQuery','Javascript','CSS','Laravel','CakePHP','Symfony','Yii 2','Phalcon','Zend','Slim','FuelPHP','PHPixie','Mysql'],
+    delay:100
+    },
+    showAutocompleteOnFocus: true
     });
-
+    
     });
 </script>
 
