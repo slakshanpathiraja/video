@@ -116,7 +116,7 @@
                         downlaodURL : downlaodURL
                     },
                    success:function(data){
-                       if(data=="added"){
+                       if(data==1){
                             window.location.href="index.php";
                         }else{
                             alert(data);
@@ -156,7 +156,7 @@ function add_users() {
             cpw_ : cpw_
         },
         success:function(data){
-            if(data=="added"){
+            if(data==1){
                 window.location.href="index.php";
             }else{
                 alert(data);
@@ -184,7 +184,7 @@ function log_users() {
             pw : log_pw
         },
         success:function(data){
-            if(data=="added"){
+            if(data==1){
                 window.location.href="index.php";
             }else{
                 alert(data);

@@ -19,9 +19,9 @@ if (mysqli_connect_errno($conn)){
         $query_add = "INSERT INTO `video`(`id`, `v_id`, `v_title`, `v_url`, `i_url`, `v_time`, `v_view`) VALUES(NULL,'v_{$video_id}','{$video_title}','{$video_url}','{$video_image_url}','{$video_time}','{$video_view}');";
         $query_add_run = mysqli_query($conn,$query_add);
             if($query_add_run){
-                echo "added";
+                echo 1;
             }else{
-                echo "not_added";
+                echo "data_not_added";
             }
     }
     if($data_id === 'user'){
@@ -33,9 +33,9 @@ if (mysqli_connect_errno($conn)){
         $query_add = "INSERT INTO `users`(`id`, `user_id`, `user_name`, `user_email`, `user_password`) VALUES(NULL,'u_{$user_id}','{$user_name}','{$user_email}','{$user_pw}');";
         $query_add_run = mysqli_query($conn,$query_add);
             if($query_add_run){
-                echo "added";
+                echo 1;
             }else{
-                echo "not_added";
+                echo "data_not_added";
             }
     }
     if($data_id === 'login'){
@@ -44,10 +44,10 @@ if (mysqli_connect_errno($conn)){
         $query_find ="SELECT * FROM users WHERE user_email='$user_email' AND user_password='$user_pw' ";
         $query_find_run = mysqli_query($conn,$query_find);
         if(mysqli_fetch_array($query_find_run)){
-            echo "added";
+            echo 1;
             $_SESSION['username']=$user_email;
         }else{
-            echo "not_added";
+            echo "not_valide_user";
         }
     }
  }
