@@ -86,7 +86,7 @@
       "Scheme"
     ];
     $( "#tags" ).autocomplete({
-      source: availableTags
+      source: availableTags,
       appendTo : $('#upload')
     });
   } );
