@@ -59,7 +59,7 @@
         });
     });
 
-    $('#skill').tokenfield({
+    $('#tag').tokenfield({
     autocomplete:{
     source: ['PHP','Codeigniter','HTML','JQuery','Javascript','CSS','Laravel','CakePHP','Symfony','Yii 2','Phalcon','Zend','Slim','FuelPHP','PHPixie','Mysql'],
     delay:100,
@@ -85,6 +85,7 @@
     function upload() {
         var title_ = document.getElementById("form_title").value;
         var vurl_ = document.getElementById("form_vurl").value;
+        var vtag_ = document.getElementById("tag").value;
     //get your select image
     var image=document.getElementById("image").files[0];
     //now get your image name
@@ -117,7 +118,7 @@
             console.log(title_);
             console.log(vurl_);
             console.log(downlaodURL);
-            
+            console.log(vtag_);
             $.ajax({
                     url:'insert.php',
                     method:'POST',
