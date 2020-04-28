@@ -61,10 +61,13 @@
         autocomplete:{
         source: ['PHP','Codeigniter','HTML','JQuery','Javascript','CSS','Laravel','CakePHP','Symfony','Yii 2','Phalcon','Zend','Slim','FuelPHP','PHPixie','Mysql'],
         delay:100
+        style.zIndex : 9990;
+        zindex :9990;
         },
         showAutocompleteOnFocus: true
+        
     });
-    
+
     });
 </script>
 
