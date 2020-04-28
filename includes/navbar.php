@@ -9,11 +9,11 @@
                 <li><a class="item" href="index.php">home</a></li>
                 <li><a class="item" href="#">set 2</a></li>
                 <li><a class="item" href="#" id="set3">set 3</a></li>
-                <li><a class="item" href="javascript:void(0);"onmouseover="sb_menu()"onmouseout="sb_menu()"onclick="sb_menu()">set 4
+                <li><a class="item" href="javascript:void(0);"onmouseover="sb_menu()"onmouseout="sb_menu()">set 4 
                     <i class="fa fa-caret-down"></i>
                 </a></li>
                 <?php if(isset($_SESSION['username'])) {?>
-                  <li id="btn_profile"><a class="item active" href="javascript:void(0);"onmouseover="profile_menu()"onmouseout="profile_menu()"onclick="profile_menu()">
+                  <li id="btn_profile"><a class="item active" href="javascript:void(0);"onmouseover="profile_menu()"onmouseout="profile_menu()">
                     <i class="fa fa-user" style="font-size:23px"></i>
                   </a>
                   </li>

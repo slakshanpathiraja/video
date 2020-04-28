@@ -60,8 +60,7 @@
     $('#skill').tokenfield({
     autocomplete:{
     source: ['PHP','Codeigniter','HTML','JQuery','Javascript','CSS','Laravel','CakePHP','Symfony','Yii 2','Phalcon','Zend','Slim','FuelPHP','PHPixie','Mysql'],
-    delay:100;
-    z-index: 11001;
+    delay:100
     },
     showAutocompleteOnFocus: true
     });
