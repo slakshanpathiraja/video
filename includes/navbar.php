@@ -119,7 +119,7 @@
             <input type="password" class="form-control" id="u_log_Password" placeholder="Password">
           </div>
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <button type="submit" class="btn btn-success"onclick="log_users()">Login</button>
+          <button type="button" class="btn btn-success"onclick="log_users()">Login</button>
         </form>
         </div>
         <div class="card-body " id="card_2">
@@ -138,7 +138,7 @@
             <input type="password" class="form-control" id="u_add_Password2" placeholder="Conform Password">
           </div>
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <button type="submit" class="btn btn-success" onclick="add_users()">Sign up</button>
+          <button type="button" class="btn btn-success" onclick="add_users()">Sign up</button>
         </form>
         </div>
       </div>
