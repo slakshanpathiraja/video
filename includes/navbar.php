@@ -166,7 +166,7 @@
       </div>
       <div class="form-group">
         <label>Enter the tags</label>
-        <input type="text" name="tags" id="tags" data-role="tagsinput"  class="form-control" />
+        <input type="text" name="tags" id="tags" class="form-control" />
        </div>
       <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
       <button type="button" class="btn btn-primary btn_upload" onclick="upload()">Upload</button>
