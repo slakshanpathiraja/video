@@ -49,16 +49,18 @@
     $("#set3").click(function(){
         swal({
       title: "Good job!",
-      text: "You clicked the button!",
+      text: "success!",
       icon: "success",
-      button: "Aww yiss!",
-    });
-    $("#btn_upload2").click(function(){
-        $(".upload_bar").hide(500);
-    });
+      button: "OK!",
     });
 
     });
+
+    });
+</script>
+
+<!--upload data-->
+<script>
     function dec2hex (dec) {
         return ('0' + dec.toString(16)).substr(-2)
     }
@@ -114,8 +116,11 @@
                         downlaodURL : downlaodURL
                     },
                    success:function(data){
-                       alert(data);
-                       
+                       if(data=="added"){
+                            window.location.href="index.php";
+                        }else{
+                            alert(data);
+                        }
                    }
                 });
 
@@ -125,6 +130,8 @@
     });
 }
 </script>
+
+<!--user add-->
 <script>
 function add_users() {
     var name_ = document.getElementById("u_add_name").value;
@@ -149,13 +156,19 @@ function add_users() {
             cpw_ : cpw_
         },
         success:function(data){
-            alert(data);
+            if(data=="added"){
+                window.location.href="index.php";
+            }else{
+                alert(data);
+            }
             
         }
     });
     $('#user').modal('hide');
 }
 </script>
+
+<!--login user-->
 <script>
 function log_users() {
     var log_email = document.getElementById("u_log_email").value;
@@ -171,14 +184,18 @@ function log_users() {
             pw : log_pw
         },
         success:function(data){
-            //alert(data);
-            document.getElementById('user').style.display='none'
-            window.location = "index.php";
+            if(data=="added"){
+                window.location.href="index.php";
+            }else{
+                alert(data);
+            }
         }
     });
 
 }
 </script>
+
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
 
