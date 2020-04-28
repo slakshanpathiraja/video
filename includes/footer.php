@@ -59,38 +59,16 @@
       button: "OK!",
         });
     });
-    
-    $( function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $( "#tags" ).autocomplete({
-      source: availableTags,
-      appendTo : $('#upload')
+    $('#tags').tokenfield({
+        autocomplete:{
+        source: ['PHP','Codeigniter','HTML','JQuery','Javascript','CSS','Laravel','CakePHP','Symfony','Yii 2','Phalcon','Zend','Slim','FuelPHP','PHPixie','Mysql'],
+        delay:100,
+        appendTo : $('#upload')
+        },
+        showAutocompleteOnFocus: true
     });
-  } );
-    
+
+ 
     });
 </script>
 
