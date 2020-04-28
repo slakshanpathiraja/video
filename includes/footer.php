@@ -62,9 +62,10 @@
     $('#tags').tokenfield({
     autocomplete: {
         source: ['red','blue','green','yellow','violet','brown','purple','black','white'],
-        appendTo : $('#upload')
+        
     },
-    showAutocompleteOnFocus: true
+    showAutocompleteOnFocus: true,
+    appendTo : $('#upload')
     })
     
     
