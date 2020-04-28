@@ -87,6 +87,7 @@
     ];
     $( "#tags" ).autocomplete({
       source: availableTags
+      appendTo : $('#upload')
     });
   } );
     
