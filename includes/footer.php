@@ -60,15 +60,14 @@
         });
     });
     $('#tags').tokenfield({
-        autocomplete:{
-        source: ['PHP','Codeigniter','HTML','JQuery','Javascript','CSS','Laravel','CakePHP','Symfony','Yii 2','Phalcon','Zend','Slim','FuelPHP','PHPixie','Mysql'],
-        delay:100,
+    autocomplete: {
+        source: ['red','blue','green','yellow','violet','brown','purple','black','white'],
         appendTo : $('#upload')
-        },
-        showAutocompleteOnFocus: true
-    });
-
- 
+    },
+    showAutocompleteOnFocus: true
+    })
+    
+    
     });
 </script>
 
