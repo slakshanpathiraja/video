@@ -119,8 +119,8 @@
                    }
                 });
 
-            document.getElementById('upload').style.display='none'
-            
+            //document.getElementById('upload').style.display='none'
+            $('#upload').modal('hide');
         });
     });
 }
@@ -153,7 +153,7 @@ function add_users() {
             
         }
     });
-
+    $('#user').modal('hide');
 }
 </script>
 <script>
