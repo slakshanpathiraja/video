@@ -85,7 +85,7 @@
     function upload() {
         var title_ = document.getElementById("form_title").value;
         var vurl_ = document.getElementById("form_vurl").value;
-        var vtag_ = document.getElementById("tag").tokenfield('setTokens',[]);
+        var vtag_ = $('#tag').tokenfield('setTokens',[]);
     //get your select image
     var image=document.getElementById("image").files[0];
     //now get your image name
