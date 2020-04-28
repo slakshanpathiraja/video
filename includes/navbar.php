@@ -164,6 +164,10 @@
         <label for="exampleFormControlFile1">Image Upload</label>
         <input type="file" class="form-control-file" id="image" accept="image/*" required>
       </div>
+      <div class="form-group">
+        <label>Enter the tags</label>
+        <input type="text" name="skill" id="skill" class="form-control" />
+       </div>
       <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
       <button type="button" class="btn btn-primary btn_upload" onclick="upload()">Upload</button>
       </form> 

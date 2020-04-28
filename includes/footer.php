@@ -21,7 +21,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tokenfield/0.12.0/bootstrap-tokenfield.js"></script>
+  
+ 
 <script>
     $(document).ready(function(){
         $("#card_2").hide();
@@ -52,10 +55,16 @@
       text: "success!",
       icon: "success",
       button: "OK!",
+        });
     });
-
+    $('#skill').tokenfield({
+        autocomplete:{
+        source: ['PHP','Codeigniter','HTML','JQuery','Javascript','CSS','Laravel','CakePHP','Symfony','Yii 2','Phalcon','Zend','Slim','FuelPHP','PHPixie','Mysql'],
+        delay:100
+        },
+        showAutocompleteOnFocus: true
     });
-
+    
     });
 </script>
 
