@@ -241,7 +241,7 @@ background: linear-gradient(to bottom,  #cb60b3 0%,#c146a1 50%,#a80077 51%,#db36
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=0 ); /* IE6-9 */
 }
 #upload{
-    z-index: 1;
+    z-index: 5;
 }
 .footer{
     background-color: black;
