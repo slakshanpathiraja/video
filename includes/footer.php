@@ -140,7 +140,7 @@
                 });
 
             //document.getElementById('upload').style.display='none'
-            $('#upload').modal('hide');
+            //$('#upload').modal('hide');
         });
     });
 }
@@ -179,7 +179,7 @@ function add_users() {
             
         }
     });
-    $('#user').modal('hide');
+    //$('#user').modal('hide');
 }
 </script>
 
