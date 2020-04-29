@@ -14,11 +14,14 @@ if (mysqli_connect_errno($conn)){
         $video_title=$_POST['title_'];
         $video_url=$_POST['vurl_'];
         $video_image_url=$_POST['downlaodURL'];
+        $video_tag=$_POST['vtag_'];
         $video_view = "0";
         $video_time = "10.56";
         $query_add = "INSERT INTO `video`(`id`, `v_id`, `v_title`, `v_url`, `i_url`, `v_time`, `v_view`) VALUES(NULL,'v_{$video_id}','{$video_title}','{$video_url}','{$video_image_url}','{$video_time}','{$video_view}');";
         $query_add_run = mysqli_query($conn,$query_add);
             if($query_add_run){
+                $query_add_tag = "INSERT INTO `tag`(`id`, `video_id`, `tag_id`) VALUES(NULL,'v_{$video_id}','{$video_tag[0]}');";
+                $query_add_run_tag = mysqli_query($conn,$query_add_tag);
                 echo 1;
             }else{
                 echo "data_not_added";

@@ -127,6 +127,7 @@
                         video_id : video_id,
                         title_ : title_,
                         vurl_ : vurl_,
+                        vtag_ : vtag_,
                         downlaodURL : downlaodURL
                     },
                    success:function(data){
