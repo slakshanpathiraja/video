@@ -131,7 +131,8 @@
                     },
                    success:function(data){
                        if(data==1){
-                            window.location.href="index.php";
+                            alert(data);
+                            //window.location.href="index.php";
                         }else{
                             alert(data);
                         }
