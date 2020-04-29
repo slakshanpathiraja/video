@@ -85,7 +85,7 @@
     function upload() {
         var title_ = document.getElementById("form_title").value;
         var vurl_ = document.getElementById("form_vurl").value;
-        var vtag_ = $(this).serialize();
+        var vtag_ = document.getElementById("tag").value;
     //get your select image
     var image=document.getElementById("image").files[0];
     //now get your image name
